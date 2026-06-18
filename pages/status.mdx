@@ -1,0 +1,30 @@
+---
+title: 'Server Status & Statistics'
+description: 'Live status dashboard and historical player and discord statistics for ZHorde.'
+date: '2026-06-17'
+---
+
+Stay updated with the real-time status of the ZHorde server network, and view historical growth charts of our community.
+
+### Live Status
+
+<ServerStatsDashboard />
+
+### Historical Statistics
+
+View how the community has grown over time, including Discord membership and daily Minecraft player counts.
+
+<div className="grid grid-cols-1 gap-6 mt-8">
+  <ChartEmbed 
+    src="https://charts.mongodb.com/charts-jaybot-jshchht/embed/charts?id=b2f1debc-b004-45dc-bac2-e033c101738d&maxDataAge=14400&theme=dark&autoRefresh=true" 
+    title="Discord Member Count Over Time" 
+  />
+  <ChartEmbed 
+    src="https://charts.mongodb.com/charts-jaybot-jshchht/embed/charts?id=46b776f7-26a2-4b62-b700-85e044a18ca5&maxDataAge=60&theme=dark&autoRefresh=true" 
+    title="Daily Average Online Minecraft Players" 
+  />
+  <ChartEmbed 
+    src="https://charts.mongodb.com/charts-jaybot-jshchht/embed/charts?id=aba3e5ae-794b-45cd-b9ee-64875245be0b&maxDataAge=60&theme=dark&autoRefresh=true" 
+    title="Daily Maximum Minecraft Players Online At Once" 
+  />
+</div>
